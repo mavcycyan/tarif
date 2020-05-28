@@ -61,7 +61,8 @@ body { font-family: "Muller"; color: #492B75; }
 @media(min-width: 768px) { .tariffs .container { max-width: 96.6%; padding: 0 1.6%; }
   .tariffs .row { margin: 0 -1.6%; }
   .tariffs-col { padding: 0 1.6%; } }
-@media(max-width: 767px) { .tariffs-bl { max-width: 300px; margin-bottom: 50px; }
+@media(max-width: 767px) { .tariffs { padding-top: 50px; }
+  .tariffs-bl { max-width: 300px; margin-bottom: 50px; }
   .tariffs-bl-ttl { font-size: 20px; }
   .tariffs-bl-info { padding: 20px 15px; }
   .tariffs-bl-speed { padding-left: 20px; font-size: 15px; }
