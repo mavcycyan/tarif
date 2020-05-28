@@ -1,0 +1,177 @@
+@import 'bootstrap.min.css'
+@import 'reset.sass'
+@import 'fonts.scss'
+@import 'colors.sass'
+
+body
+    font-family: $f_Muller
+    color: $c_Minsk
+
+.tariffs
+    padding-top: 100px
+    &-bl
+        margin: 0 auto
+        margin-bottom: 100px
+        max-width: 400px
+        width: 100%
+        &-ttl
+            font-size: 2vw
+            padding-left: 24px
+            margin-bottom: 20px
+        &-info
+            padding: 14% 10% 11%
+            box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.2)
+        &-top
+            min-height: 6vw
+            margin-bottom: 14px
+        &-speed
+            padding: 3px 0 8px 3.5vw
+            font-size: 1.8vw
+            position: relative
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                background: url('../img/app.png')no-repeat 0% 0%
+                -webkit-background-size: 100% auto
+                top: 0
+                left: 0
+                width: 2vw
+                height: 2vw
+        &-chan
+            padding: 3px 0 8px 3.5vw
+            font-size: 1.4vw
+            color: $c_Dixie
+        &-app
+            padding-left: 3.5vw
+            margin-bottom: 2.8vw
+            position: relative
+            font-size: 0.9vw
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                background: url('../img/ttl.png')no-repeat 0% 0%
+                -webkit-background-size: 100% auto
+                top: 50%
+                left: 0
+                width: 1.8vw
+                height: 2vw
+                transform: translateY(-50%)
+        &-txt
+            padding-left: 3.5vw
+            font-size: 1.1vw
+            min-height: 8.8vw
+        &-price
+            padding-left: 3.5vw
+            font-size: 2vw
+        &-btn
+            margin-top: 2vw
+            position: relative
+            &:before 
+                content: ''
+                position: absolute
+                display: block
+                background: url('../img/mouse.png')no-repeat 50% 0%
+                -webkit-background-size: 100% auto
+                background-size: 100% auto
+                width: 2.7vw
+                height: 2.7vw
+                right: 0
+                top: 0
+            a
+                width: 100%
+                display: block
+                max-width: 80%
+                text-align: center
+                font-size: 1.9vw
+                padding: 12px 10px
+                position: relative
+                span
+                    color: $c_Minsk
+                    position: relative
+                    z-index: 2
+                &:before
+                    content: ''
+                    width: 100%
+                    height: 100%
+                    background: $c_Dixie
+                    display: block
+                    position: absolute
+                    z-index: 1
+                    transform: rotate(-1.5deg) skewX(-1.3deg) translate(-7px, -15px)
+                &:hover
+                    &:before
+                        background: $c_Minsk
+                    span
+                        color: $c_White
+    &-col
+        &:nth-child(2n)
+            .tariffs-bl
+                &-btn
+                    &:before
+                        background-position: 50% 100%
+                    a
+                        &:before
+                            background: $c_Minsk
+                        span
+                            color: $c_White
+                        &:hover
+                            &:before
+                                background: $c_Dixie
+                            span
+                                color: $c_Minsk
+
+@media(min-width: 768px)
+    .tariffs
+        .container
+            max-width: 96.6%
+            padding: 0 1.6%
+        .row
+            margin: 0 -1.6%
+        &-col
+            padding: 0 1.6%
+            
+@media(max-width: 767px)
+    .tariffs
+        &-bl
+            max-width: 300px
+            margin-bottom: 50px
+            &-ttl
+                font-size: 20px
+            &-info
+                padding: 20px 15px
+            &-speed
+                padding-left: 20px
+                font-size: 15px
+                &:before
+                    top: 50%
+                    width: 9px
+                    height: 9px
+                    margin-top: -9px
+            &-chan
+                padding-left: 20px
+                font-size: 12px
+            &-app
+                padding-left: 20px
+                font-size: 15px
+                &:before
+                    top: 50%
+                    width: 9px
+                    height: 11px
+                    margin-top: -2px
+            &-txt
+                padding-left: 20px
+                font-size: 11px
+                min-height: 1px
+                margin-bottom: 15px
+            &-price
+                padding-left: 20px
+                font-size: 14px
+            &-btn
+                margin-top: 30px
+                &:before
+                    width: 30px
+                    height: 30px
+                a
+                    font-size: 15px
